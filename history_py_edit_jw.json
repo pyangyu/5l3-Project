@@ -4501,6 +4501,19 @@
     "description": "Mass edit cells in column sponsor"
   },
   {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column sponsor using expression value.trim()"
+  },
+  {
     "op": "core/mass-edit",
     "engineConfig": {
       "facets": [],
@@ -4557,15 +4570,6 @@
         "fromBlank": false,
         "fromError": false,
         "to": "NEW YORK LIFE INSUANCE COMPANY"
-      },
-      {
-        "from": [
-          "S.S. NIEUW AMSTERDAM",
-          "S.S. NIEW AMSTERDAM"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "S.S. NIEUW AMSTERDAM"
       },
       {
         "from": [
@@ -4632,21 +4636,12 @@
       },
       {
         "from": [
-          "BREAKFAST MENU, S. S. VADERLAND, MARCH 18TH, 1910.",
-          "BREAKFAST MENU, S. S. VADERLAND, MARCH 19TH, 1910."
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "BREAKFAST MENU, S. S. VADERLAND, MARCH 18TH, 1910."
-      },
-      {
-        "from": [
           "COLUMBIA UNIVERSITY RESTAUANT",
           "COLUMBIA UNIVERSITY RESTAURANT"
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "COLUMBIA UNIVERSITY RESTAUANT"
+        "to": "COLUMBIA UNIVERSITY RESTAURANT"
       },
       {
         "from": [
@@ -4656,15 +4651,6 @@
         "fromBlank": false,
         "fromError": false,
         "to": "NIPPON YUSEN KAISHA"
-      },
-      {
-        "from": [
-          "LUNCHEON MENU, S. S. VADERLAND, MARCH 18TH, 1910.",
-          "LUNCHEON MENU, S. S. VADERLAND, MARCH 19TH, 1910."
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "LUNCHEON MENU, S. S. VADERLAND, MARCH 18TH, 1910."
       },
       {
         "from": [
@@ -4700,7 +4686,7 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "PORTS O' CALL"
+        "to": "PORTS OF CALL"
       },
       {
         "from": [
@@ -4709,7 +4695,7 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "AMERICAL CHEMICAL SOCIETY"
+        "to": "AMERICAN CHEMICAL SOCIETY"
       },
       {
         "from": [
@@ -4728,15 +4714,6 @@
         "fromBlank": false,
         "fromError": false,
         "to": "ALBEMARLE HOTEL"
-      },
-      {
-        "from": [
-          "STATE DEPARTMENT SPECIAL TO THE PAND-AMERICAN CONGRESS AT THE CITY OF MEXICO (PULLMAN CAR SERVICE)",
-          "STATE DEPARTMENT SPECIAL TO THE PAN-AMERICAN CONGRESS AT THE CITY OF MEXICO (PULLMAN CAR SERVICE)"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "STATE DEPARTMENT SPECIAL TO THE PAND-AMERICAN CONGRESS AT THE CITY OF MEXICO (PULLMAN CAR SERVICE)"
       },
       {
         "from": [
@@ -4782,15 +4759,6 @@
         "fromBlank": false,
         "fromError": false,
         "to": "GREAT NORTHERN SYSTEM - DINING CARS"
-      },
-      {
-        "from": [
-          "SUPPER MENU, S. S. VADERLAND, MARCH 18TH, 1910.",
-          "SUPPER MENU, S. S. VADERLAND, MARCH 19TH, 1910."
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "SUPPER MENU, S. S. VADERLAND, MARCH 18TH, 1910."
       },
       {
         "from": [
@@ -4844,7 +4812,7 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "PALACE HOTEL RESTAURAT AND LADIES GRILL ROOM"
+        "to": "PALACE HOTEL RESTAURANT AND LADIES GRILL ROOM"
       },
       {
         "from": [
@@ -4884,12 +4852,12 @@
       },
       {
         "from": [
-          "HOTEL LACHER",
-          "HOTEL SACHER"
+          "RESTAURANT NAME AND/OR LOCATION NOT GIVEN",
+          "RESTAURTANT NAME AND/OR LOCATION NOT GIVEN"
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "HOTEL LACHER"
+        "to": "RESTAURANT NAME AND/OR LOCATION NOT GIVEN"
       },
       {
         "from": [
@@ -4898,7 +4866,7 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "FLAT IRON RESAURANT AND CAFE"
+        "to": "FLAT IRON RESTAURANT AND CAFE"
       },
       {
         "from": [
@@ -4916,7 +4884,7 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "THE WHITE TURKEYS"
+        "to": "THE WHITE TURKEY"
       },
       {
         "from": [
@@ -4947,21 +4915,21 @@
       },
       {
         "from": [
-          "PENNSYLVANIA RAILROAD DINING CARS",
-          "PENNSYLVANIA RAILROAD DINING CAR"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "PENNSYLVANIA RAILROAD DINING CARS"
-      },
-      {
-        "from": [
           "NORDDEUTSCHER LLOYD BREMEN",
           "NORDDEUTSCHER LLOYDS BREMEN"
         ],
         "fromBlank": false,
         "fromError": false,
         "to": "NORDDEUTSCHER LLOYD BREMEN"
+      },
+      {
+        "from": [
+          "PENNSYLVANIA RAILROAD DINING CARS",
+          "PENNSYLVANIA RAILROAD DINING CAR"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PENNSYLVANIA RAILROAD DINING CARS"
       },
       {
         "from": [
@@ -4979,7 +4947,7 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "HOTEL WALTON"
+        "to": "WALTON HOTEL"
       },
       {
         "from": [
@@ -4988,7 +4956,7 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "HOLLAND-AMERICA LINE"
+        "to": "HOLLAND-AMERICAN LINE"
       },
       {
         "from": [
@@ -4997,7 +4965,1695 @@
         ],
         "fromBlank": false,
         "fromError": false,
-        "to": "AMERICA ASSOCIATION OF PUBLIC ACCOUNTANTS"
+        "to": "AMERICAN ASSOCIATION OF PUBLIC ACCOUNTANTS"
+      }
+    ],
+    "description": "Mass edit cells in column sponsor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ST. GEORGE'S SOCIETY OF NEW YORK",
+          "ST. GEORGE'S SOCIETY OF THE CITY OF NEW YORK",
+          "ST. GEORGE'S SOCIETY OF THE CITY OF NY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ST. GEORGE'S SOCIETY OF NEW YORK"
+      },
+      {
+        "from": [
+          "THE ST. CHARLES",
+          "ST. CHARLES",
+          "THE NEW ST. CHARLES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ST. CHARLES"
+      },
+      {
+        "from": [
+          "CHAMBER OF COMMERCE",
+          "CHAMBER OF COMMERCE (NY)",
+          "THE CHAMBER OF COMMERCE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMBER OF COMMERCE"
+      },
+      {
+        "from": [
+          "THE AMEN CORNER",
+          "AMEN CORNER",
+          "AMEN CORNER AXE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE AMEN CORNER"
+      },
+      {
+        "from": [
+          "ANCIENT & HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS",
+          "ANCIENT AND HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS",
+          "ANCIENT AND HONORABLE ARTILLERY CO OF MASSACHUSETTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANCIENT & HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS"
+      },
+      {
+        "from": [
+          "OCCIDENTAL & ORIENTAL STEAMSHIP COMPANY",
+          "OCCIDENTAL & ORIENTAL STEAMSHIP CO.",
+          "OCCIDENTAL AND ORIENTAL STEAMSHIP CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCCIDENTAL & ORIENTAL STEAMSHIP COMPANY"
+      },
+      {
+        "from": [
+          "CHAMBER OF COMMERCE OF THE STATE OF NEW YORK",
+          "CHAMBER OF COMMERCE OF STATE OF NEW YORK",
+          "CHAMBER OF COMMERCE OF THE STATE OF NY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMBER OF COMMERCE OF THE STATE OF NEW YORK"
+      },
+      {
+        "from": [
+          "A STOCKHOLM RESTAURANT",
+          "STOCKHOLM RESTAURANT",
+          "THE STOCKHOLM RESTAURANTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE STOCKHOLM RESTAURANT"
+      },
+      {
+        "from": [
+          "THE NATIONAL ARTS CLUB",
+          "NATIONAL ARTS CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE NATIONAL ARTS CLUB"
+      },
+      {
+        "from": [
+          "RUSSELL HOUSE",
+          "RUSSELL HOUSE,THE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RUSSELL HOUSE"
+      },
+      {
+        "from": [
+          "COLLEGE OF THE CITY OF NEW YORK",
+          "COLLEGE OF CITY OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLLEGE OF THE CITY OF NEW YORK"
+      },
+      {
+        "from": [
+          "ALPHA KAPPA KAPPA",
+          "ALPHA KAPPA PHI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALPHA KAPPA KAPPA"
+      },
+      {
+        "from": [
+          "UNIVERSALIST CLUB",
+          "THE UNIVERSALIST CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE UNIVERSALIST CLUB"
+      },
+      {
+        "from": [
+          "RED STAR LINE - ANTWERPEN - NY",
+          "RED STAR LINE - ANTWEPEN NY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RED STAR LINE - ANTWERPEN - NY"
+      },
+      {
+        "from": [
+          "UNION LEAGUE CLUB",
+          "THE UNION LEAGUE CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE UNION LEAGUE CLUB"
+      },
+      {
+        "from": [
+          "PROFILE HOUSE",
+          "THE PROFILE HOUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE PROFILE HOUSE"
+      },
+      {
+        "from": [
+          "WALDORF ASTORIA",
+          "THE WALDORF ASTORIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE WALDORF ASTORIA"
+      },
+      {
+        "from": [
+          "THE CULINARY INSTITUTE OF AMERICA",
+          "CULINARY INSTITUTE OF AMERICA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE CULINARY INSTITUTE OF AMERICA"
+      },
+      {
+        "from": [
+          "HOTEL ROOSEVELT",
+          "THE HOTEL ROOSEVELT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ROOSEVELT HOTEL"
+      },
+      {
+        "from": [
+          "THE ICE TERRACE",
+          "ICE TERRACE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ICE TERRACE"
+      },
+      {
+        "from": [
+          "THE PULLMAN COMPANY",
+          "PULLMAN COMPANY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE PULLMAN COMPANY"
+      },
+      {
+        "from": [
+          "BAILEY CATERING CO.",
+          "BAILY CATERING CO.THE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAILEY CATERING CO."
+      },
+      {
+        "from": [
+          "RESTAURANT VICTORIA",
+          "VICTORIAN RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VICTORIA RESTAURANT"
+      },
+      {
+        "from": [
+          "CHAMBER OF COMMERCE OF THE STATE OF NEW YORK",
+          "CHAMBER OF COMMERCE OF STATE OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMBER OF COMMERCE OF THE STATE OF NEW YORK"
+      },
+      {
+        "from": [
+          "ALDINE CLUB",
+          "THE ALDINE CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ALDINE CLUB"
+      },
+      {
+        "from": [
+          "NIPPON YUSEN KAISHA - S.S.ROSETTA MAM",
+          "NIPPON YUSEN KAISHA - S.S.ROSETTA MARU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NIPPON YUSEN KAISHA - S.S.ROSETTA MAM"
+      },
+      {
+        "from": [
+          "NATIONAL HORSE SHOW ASSOCIATION OF AMERICA",
+          "NAIONAL HOSE SHOW ASSOCIATION OF AMERICA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NATIONAL HORSE SHOW ASSOCIATION OF AMERICA"
+      },
+      {
+        "from": [
+          "THE HOLLAND SOCIETY OF NEW YORK",
+          "HOLLAND SOCIETY OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE HOLLAND SOCIETY OF NEW YORK"
+      },
+      {
+        "from": [
+          "ANCIENT ACCEPTED SCOTTISH RITE",
+          "ANCIENT AND ACCEPTED SCOTTISH RITE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANCIENT ACCEPTED SCOTTISH RITE"
+      },
+      {
+        "from": [
+          "NEW YORK FARMERS",
+          "THE NEW YORK FARMERS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE NEW YORK FARMERS"
+      },
+      {
+        "from": [
+          "GRAND HOTEL",
+          "GRANDON HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE GRAND HOTEL"
+      },
+      {
+        "from": [
+          "STOCKHOLM RESTAURANT",
+          "THE STOCKHOLM RESTAURANTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE STOCKHOLM RESTAURANT"
+      },
+      {
+        "from": [
+          "THE WASHINGTON HOTEL",
+          "THE NEW WASHINGTON HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE WASHINGTON HOTEL"
+      },
+      {
+        "from": [
+          "METROPOLITAN CLUB",
+          "THE METROPOLITAN CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE METROPOLITAN CLUB"
+      },
+      {
+        "from": [
+          "REFORM CLUB",
+          "THE REFORM CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE REFORM CLUB"
+      },
+      {
+        "from": [
+          "THE NEW WILLARD",
+          "NEW WILLARD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE NEW WILLARD"
+      },
+      {
+        "from": [
+          "ESSEX HOUSE",
+          "THE ESSEX HOUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ESSEX HOUSE"
+      },
+      {
+        "from": [
+          "RITZ CARLTON",
+          "THE RITZ CARLTON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE RITZ CARLTON"
+      },
+      {
+        "from": [
+          "CONNAUGHT ROOMS",
+          "THE CONNAUGHT ROOMS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE CONNAUGHT ROOMS"
+      },
+      {
+        "from": [
+          "LOS ANGELES CONSISTORY #3",
+          "LOS ANGELES CONSISTORY NO.3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LOS ANGELES CONSISTORY NO.3"
+      },
+      {
+        "from": [
+          "DETROIT CLUB",
+          "THE DETROIT CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE DETROIT CLUB"
+      },
+      {
+        "from": [
+          "THETA DELTA CHI FRATERNITY",
+          "DELTA CHI FRATERNITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THETA DELTA CHI FRATERNITY"
+      },
+      {
+        "from": [
+          "[THE WALDORF ASTORIA HOTEL (NEW YORK, N.Y.)]",
+          "WALDORF ASTORIA HOTEL (NEW YORK, N.Y.)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE WALDORF ASTORIA HOTEL (NEW YORK, N.Y.)"
+      },
+      {
+        "from": [
+          "DELMONICO'S",
+          "DELMONICO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DELMONICO'S"
+      },
+      {
+        "from": [
+          "THE WHITE TURKEY",
+          "WHITE TURKEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE WHITE TURKEY"
+      },
+      {
+        "from": [
+          "THE COMMODORE HOTEL",
+          "COMMODORE HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE COMMODORE HOTEL"
+      },
+      {
+        "from": [
+          "THIRTEEN CLUB",
+          "THE THIRTEEN CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE THIRTEEN CLUB"
+      },
+      {
+        "from": [
+          "CLUB HOUSE",
+          "THE CLUB HOUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE CLUB HOUSE"
+      },
+      {
+        "from": [
+          "FLYING CLIPPER RESTAURANT",
+          "THE FLYING CLIPPER RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE FLYING CLIPPER RESTAURANT"
+      },
+      {
+        "from": [
+          "ST. REGIS HOTEL",
+          "THE ST. REGIS HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ST. REGIS HOTEL"
+      },
+      {
+        "from": [
+          "HOTEL FRANKFURTER HOF",
+          "FRANKFURTER HOF"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FRANKFURTER HOF HOTEL"
+      },
+      {
+        "from": [
+          "CHICAGO ASSOCIATION OF COMMERCE",
+          "CHICAGO COMMERCIAL ASSOCIATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHICAGO ASSOCIATION OF COMMERCE"
+      },
+      {
+        "from": [
+          "COMMANDER HOTEL",
+          "THE COMMANDER HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE COMMANDER HOTEL"
+      },
+      {
+        "from": [
+          "COFFEE SHOP",
+          "THE COFFEE SHOP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE COFFEE SHOP"
+      },
+      {
+        "from": [
+          "NEW YORK LIBRARY CLUB",
+          "THE NEW YORK LIBRARY CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NEW YORK LIBRARY CLUB"
+      },
+      {
+        "from": [
+          "PENNSYLVANIA LUNCH",
+          "THE PENNSYLVANIA LUNCH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PENNSYLVANIA LUNCH"
+      },
+      {
+        "from": [
+          "NORTHERN STEAMSHIP COMPANY/GREAT NORTHERN RY LINE",
+          "NORTHERN STEAMSHIP COMPANY/GREAT ORTHERN RY. LINE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NORTHERN STEAMSHIP COMPANY/GREAT NORTHERN RY LINE"
+      },
+      {
+        "from": [
+          "HOLLAND SOCIETY",
+          "THE HOLLAND SOCIETY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HOLLAND SOCIETY"
+      },
+      {
+        "from": [
+          "HOTEL DE SOTO",
+          "HOTEL DE SUN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HOTEL DE SOTO"
+      },
+      {
+        "from": [
+          "EMPIRE TEA ROOM",
+          "THE EMPIRE TEA ROOM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EMPIRE TEA ROOM"
+      },
+      {
+        "from": [
+          "THE LINCOLN CLUB",
+          "LINCOLN CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE LINCOLN CLUB"
+      },
+      {
+        "from": [
+          "NATIONAL REPUBLICAN CLUB",
+          "NATIONAL REPUBLICAN CLUB HOUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NATIONAL REPUBLICAN CLUB"
+      },
+      {
+        "from": [
+          "THE NEW HAVEN RAILROAD",
+          "NEW HAVEN RAILROAD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE NEW HAVEN RAILROAD"
+      },
+      {
+        "from": [
+          "COMMERCIAL CLUB",
+          "THE COMMERCIAL CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMMERCIAL CLUB"
+      },
+      {
+        "from": [
+          "A STOCKHOLM RESTAURANT",
+          "STOCKHOLM RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STOCKHOLM RESTAURANT"
+      },
+      {
+        "from": [
+          "FIFTH AVENUE HOTEL",
+          "FIFTH AVE HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FIFTH AVENUE HOTEL"
+      },
+      {
+        "from": [
+          "MASS SOCIETY OF THE SONS OF THE AMERICAN REVOLUTION",
+          "MASSACHUSETTS SOCIETY OF THE SONS OF THE AMERICAN REVOLUTION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MASSACHUSETTS SOCIETY OF THE SONS OF THE AMERICAN REVOLUTION"
+      },
+      {
+        "from": [
+          "HOTEL VANCOUVER",
+          "THE HOTEL VANCOUVER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VANCOUVER HOTEL"
+      },
+      {
+        "from": [
+          "THE ST. CHARLES",
+          "ST. CHARLES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ST. CHARLES"
+      },
+      {
+        "from": [
+          "OCCIDENTAL & ORIENTAL STEAMSHIP CO.",
+          "OCCIDENTAL AND ORIENTAL STEAMSHIP CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCCIDENTAL & ORIENTAL STEAMSHIP CO."
+      },
+      {
+        "from": [
+          "PACIFIC MAIL STEAMSHIP CO./TRANS PACIFIC LINE",
+          "PACIFIC MAIL STEAMSHIP CO./TRANS-PACIIC LINE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PACIFIC MAIL STEAMSHIP CO./TRANS PACIFIC LINE"
+      },
+      {
+        "from": [
+          "BAVARIAN INN",
+          "THE BAVARIAN INN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAVARIAN INN"
+      },
+      {
+        "from": [
+          "THE NEW ENGLAND SOCIETY IN THE CITY OF NEW YORK",
+          "NEW ENGLAND SCIETY IN THE CITY OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE NEW ENGLAND SOCIETY IN THE CITY OF NEW YORK"
+      },
+      {
+        "from": [
+          "AMEN CORNER",
+          "AMEN CORNER AXE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMEN CORNER"
+      },
+      {
+        "from": [
+          "AUTOMOBILE CLUB OF SYRACUSE",
+          "THE AUTOMOBILE CLUB OF SYRACUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AUTOMOBILE CLUB OF SYRACUSE"
+      },
+      {
+        "from": [
+          "WESTCHESTER RESTAURANT",
+          "THE WESTCHESTER RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "WESTCHESTER RESTAURANT"
+      },
+      {
+        "from": [
+          "DOBBELTSKRUE POSTDAMPSKIBET C.F. TIETGEN",
+          "DOBBELTSKRUE POSTDAMSKIBET C.F.TIETGEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOBBELTSKRUE POSTDAMPSKIBET C.F. TIETGEN"
+      },
+      {
+        "from": [
+          "CHEMISTS' CLUB",
+          "THE CHEMISTS' CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHEMISTS' CLUB"
+      },
+      {
+        "from": [
+          "PACIFIC MAIL STEAMSHIP COMPANY",
+          "PACIFIC MAIL STEAMSHIP CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PACIFIC MAIL STEAMSHIP COMPANY"
+      },
+      {
+        "from": [
+          "MAYFLOWER HOTEL",
+          "THE MAYFLOWER HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MAYFLOWER HOTEL"
+      },
+      {
+        "from": [
+          "BANKERS' CLUB OF CHICAGO",
+          "THE BANKERS CLUB OF CHICAGO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BANKERS' CLUB OF CHICAGO"
+      },
+      {
+        "from": [
+          "ST. GEORGE'S SOCIETY OF THE CITY OF NEW YORK",
+          "ST. GEORGE'S SOCIETY OF THE CITY OF NY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ST. GEORGE'S SOCIETY OF THE CITY OF NEW YORK"
+      },
+      {
+        "from": [
+          "THE BEEKMAN CAFÉ CO.",
+          "BEEKMAN CAFÉ CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE BEEKMAN CAFÉ CO."
+      },
+      {
+        "from": [
+          "MUSICA DEGLI ALLIEVI CARABINIERE",
+          "MUSICA DEGLI ALLIEVI CARACINIERI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MUSICA DEGLI ALLIEVI CARABINIERE"
+      },
+      {
+        "from": [
+          "OCEANIC STEAMSHIP CO.",
+          "OCEANIC STEAMSHIP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCEANIC STEAMSHIP CO."
+      },
+      {
+        "from": [
+          "PALM BEACH HOTEL",
+          "THE PALM BEACH HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PALM BEACH HOTEL"
+      },
+      {
+        "from": [
+          "FLAT IRON RESTAURANT AND CAFE",
+          "FLAT IRON RESTAURANT & CAFE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FLAT IRON RESTAURANT AND CAFE"
+      },
+      {
+        "from": [
+          "ANCIENT AND HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS",
+          "ANCIENT AND HONORABLE ARTILLERY CO OF MASSACHUSETTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANCIENT AND HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS"
+      },
+      {
+        "from": [
+          "HOFFMAN HOUSE",
+          "THE HOFFMAN HOUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HOFFMAN HOUSE"
+      },
+      {
+        "from": [
+          "PLAZA HOTEL",
+          "THE PLAZA HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PLAZA HOTEL"
+      },
+      {
+        "from": [
+          "THE WILLARD HOTEL",
+          "WILLARD HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE WILLARD HOTEL"
+      },
+      {
+        "from": [
+          "THE AMEN CORNER",
+          "AMEN CORNER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE AMEN CORNER"
+      },
+      {
+        "from": [
+          "NEW YORK ALUMNI ASSOCIATION OF THE PHILLIPS EXETER ACADEMY",
+          "NEW YORK ASSOCIATION OF THE ALUMNI OF PHILIPS EXETER ACADEMY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NEW YORK ALUMNI ASSOCIATION OF THE PHILLIPS EXETER ACADEMY"
+      },
+      {
+        "from": [
+          "THE RED LION",
+          "THE RED ONION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE RED LION"
+      },
+      {
+        "from": [
+          "AMERCIAN GAS LIGHT ASSOCIATION",
+          "AMERICAN GAS LIGHT ASSOCIATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMERCIAN GAS LIGHT ASSOCIATION"
+      },
+      {
+        "from": [
+          "STATE SOCIETY OF THE CINCINNATI OF NEW JERSEY",
+          "SOCIETY OF THE CINCINNATI IN THE STATE OF NEW JERSEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STATE SOCIETY OF THE CINCINNATI OF NEW JERSEY"
+      },
+      {
+        "from": [
+          "HAMBURG-AMERIKA LINIE",
+          "HAMBURG- ARMERIKA LINIE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HAMBURG-AMERIKA LINIE"
+      },
+      {
+        "from": [
+          "SOCIETY OF COLONIAL WARS IN THE STATE OF NEW JERSEY",
+          "SOCIETY OF COLONIAL WARS IN STATE OF NEW JERSEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIETY OF COLONIAL WARS IN THE STATE OF NEW JERSEY"
+      },
+      {
+        "from": [
+          "THE COFFEE SHOP",
+          "BLYTHE COFFEE SHOP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE COFFEE SHOP"
+      },
+      {
+        "from": [
+          "CLOVER CLUB",
+          "THE CLOVER CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CLOVER CLUB"
+      },
+      {
+        "from": [
+          "CHAMBER OF COMMERCE OF THE STATE OF NEW YORK",
+          "CHAMBER OF COMMERCE OF THE STATE OF NY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMBER OF COMMERCE OF THE STATE OF NEW YORK"
+      },
+      {
+        "from": [
+          "BLACKSTONE",
+          "THE BLACKSTONE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BLACKSTONE"
+      },
+      {
+        "from": [
+          "THE THOMAS JEFFERSON INN",
+          "THE THOS. JEFFERSON INN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE THOMAS JEFFERSON INN"
+      },
+      {
+        "from": [
+          "ANTOINE'S",
+          "ANTOINE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANTOINE'S"
+      },
+      {
+        "from": [
+          "FRED HARVEY",
+          "THE FRED HARVEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FRED HARVEY"
+      },
+      {
+        "from": [
+          "SAINT DAVID'S SOCIETY OF THE STATE OF NEW YORK",
+          "ST. DAVID'S SOCIETY OF THE STATE OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SAINT DAVID'S SOCIETY OF THE STATE OF NEW YORK"
+      },
+      {
+        "from": [
+          "CITIZENS OF NEW YORK",
+          "NDCITIZENS OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CITIZENS OF NEW YORK"
+      },
+      {
+        "from": [
+          "FAIRMONT HOTEL",
+          "THE FAIRMONT HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FAIRMONT HOTEL"
+      },
+      {
+        "from": [
+          "TRANSPORTATION CLUB NEW YORK",
+          "TRANSPORTATION CLUB OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRANSPORTATION CLUB NEW YORK"
+      },
+      {
+        "from": [
+          "THE SUPER CHIEF",
+          "SUPER CHIEF"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE SUPER CHIEF"
+      },
+      {
+        "from": [
+          "COLONIAL HOTEL",
+          "YE HOTEL COLONIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLONIAL HOTEL"
+      },
+      {
+        "from": [
+          "CORTLAND COUNTY SOCIETY OF NEW YORK",
+          "CORTLAND COUNTY SOCIETY OF NEW YORK CITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CORTLAND COUNTY SOCIETY OF NEW YORK"
+      },
+      {
+        "from": [
+          "THE BALLROOM OF THE HOTEL PLAZA",
+          "THE BALLROOM AT HOTEL PLAZA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE BALLROOM OF THE HOTEL PLAZA"
+      },
+      {
+        "from": [
+          "THE NEW YORK HOSPITAL",
+          "NEW YORK HOSPITAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE NEW YORK HOSPITAL"
+      },
+      {
+        "from": [
+          "ALFREDO",
+          "ALFREDO'S"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALFREDO"
+      },
+      {
+        "from": [
+          "REPUBLIC HOUSE",
+          "REPUBLICAN HOUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "REPUBLIC HOUSE"
+      },
+      {
+        "from": [
+          "THE TRANSPORTATION CLUB",
+          "TRANSPORTATION CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE TRANSPORTATION CLUB"
+      },
+      {
+        "from": [
+          "THE SHERATON PLAZA HOTEL",
+          "SHERATON PLAZA HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE SHERATON PLAZA HOTEL"
+      },
+      {
+        "from": [
+          "NEW FALMOUTH HOTEL",
+          "THE NEW FALMOUTH HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NEW FALMOUTH HOTEL"
+      },
+      {
+        "from": [
+          "OCCIDENTAL & ORIENTAL STEAMSHIP COMPANY",
+          "OCCIDENTAL & ORIENTAL STEAMSHIP CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCCIDENTAL & ORIENTAL STEAMSHIP COMPANY"
+      },
+      {
+        "from": [
+          "THE COMMERCE CLUB",
+          "COMMERCE CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE COMMERCE CLUB"
+      },
+      {
+        "from": [
+          "THE MOUQUIN RESTAURANT AND WINE CO.",
+          "MOUQUIN RESTAURANT AND WINE CO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE MOUQUIN RESTAURANT AND WINE CO."
+      },
+      {
+        "from": [
+          "ANCIENT & HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS",
+          "ANCIENT AND HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANCIENT & HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS"
+      },
+      {
+        "from": [
+          "S.S. \"VEENDAM\"\"\"",
+          "R.M.S. \"VEENDAM\"\"\""
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "S.S. \"VEENDAM\""
+      },
+      {
+        "from": [
+          "COFFEE HOUSE",
+          "THE COFFEE HOUSE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COFFEE HOUSE"
+      },
+      {
+        "from": [
+          "GREEN MOUNTAIN RESTAURANT DINER",
+          "THE GREEN MOUNTAIN RESTAURANT DINER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GREEN MOUNTAIN RESTAURANT DINER"
+      },
+      {
+        "from": [
+          "IMPERIAL",
+          "THE IMPERIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMPERIAL"
+      },
+      {
+        "from": [
+          "THE ATLANTIS",
+          "THE ATLANTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ATLANTIS"
+      },
+      {
+        "from": [
+          "CHATEAU LAKE LOUISE",
+          "THE CHATEAU   LAKE LOUISE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHATEAU LAKE LOUISE"
+      },
+      {
+        "from": [
+          "COLUMBIA UNIVERSITY CLUB",
+          "THE COLUMBIA UNIVERSITY CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COLUMBIA UNIVERSITY CLUB"
+      },
+      {
+        "from": [
+          "THE UNIVERSAL COOKERY AND FOOD ASSOCIATIONS",
+          "UNIVERSAL COOKERY AND FOOD ASSOCIATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE UNIVERSAL COOKERY AND FOOD ASSOCIATIONS"
+      },
+      {
+        "from": [
+          "HOTEL RESTAURANT VICTORIA",
+          "RESTAURANT VICTORIA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "VICTORIA RESTAURANT HOTEL"
+      },
+      {
+        "from": [
+          "THE AUSTRALIA HOTEL",
+          "AUSTRALIA HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE AUSTRALIA HOTEL"
+      },
+      {
+        "from": [
+          "THE MOUQUIN RESTAURANT AND WINE CO.",
+          "THE MOUQUIN RESTAURANT & WINE CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE MOUQUIN RESTAURANT AND WINE CO."
+      },
+      {
+        "from": [
+          "LUCHOW'S RESTAURANT",
+          "A. LUCHOW'S RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LUCHOW'S RESTAURANT"
+      },
+      {
+        "from": [
+          "HOTELS SCHWEIZERHOF & LUZERNERHOF",
+          "SCHWEIZERHOF & LUZERNERHOF"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SCHWEIZERHOF & LUZERNERHOF HOTEL"
+      },
+      {
+        "from": [
+          "NEW YORK CENTRAL & HUDSON RIVER R.R. DINING CAR SERVICE",
+          "NEW YORK CENTRAL AND HUDSON RIVER R.R. DINING CAR SERVICE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NEW YORK CENTRAL & HUDSON RIVER R.R. DINING CAR SERVICE"
+      },
+      {
+        "from": [
+          "HOTEL BEACH PLAZA",
+          "THE HOTEL BEACH PLAZA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BEACH PLAZA HOTEL"
+      },
+      {
+        "from": [
+          "TOYO KISEN KAISHA - HONG KONG MARU",
+          "TOYO KISEN KAISHA - SS HONG KONG MARU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TOYO KISEN KAISHA - HONG KONG MARU"
+      },
+      {
+        "from": [
+          "UNIVERSITY CLUB",
+          "THE UNIVERSITY CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE UNIVERSITY CLUB"
+      },
+      {
+        "from": [
+          "SHERMAN SQUARE HOTEL",
+          "SHERIDAN SQUARE HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SHERMAN SQUARE HOTEL"
+      },
+      {
+        "from": [
+          "CENTRAL RESTAURANT",
+          "CENTRAL RESTAURANT CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CENTRAL RESTAURANT"
+      },
+      {
+        "from": [
+          "THE ASSOCIATED PIONEERS OF THE TERRITORIAL DAYS OF CALIFORNIA",
+          "ASSOCIATED PIONEERS OF THE TERRITORIAL DAYS OF CA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE ASSOCIATED PIONEERS OF THE TERRITORIAL DAYS OF CALIFORNIA"
+      },
+      {
+        "from": [
+          "PONTCHARTRAIN HOTEL",
+          "THE PONTCHARTRAIN HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PONTCHARTRAIN HOTEL"
+      },
+      {
+        "from": [
+          "RESTAURANT NAME AND/OR LOCATION NOT GIVEN",
+          "RESTAURANT AND/OR LOCATION NOT GIVEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTAURANT NAME AND/OR LOCATION NOT GIVEN"
+      },
+      {
+        "from": [
+          "HOTEL SEKON IN THE PALMS",
+          "SEKON IN THE PALMS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SEKON IN THE PALMS HOTEL"
+      },
+      {
+        "from": [
+          "LEWIS & CLARK CENTENNIAL EXPOSITION",
+          "LEWIS AND CLARK CENTENNIAL EXPOSITION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LEWIS & CLARK CENTENNIAL EXPOSITION"
+      },
+      {
+        "from": [
+          "AMERICAN MUSEUM OF NATURAL HISTORY",
+          "THE AMERICAN MUSEUM OF NATURAL HISTORY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AMERICAN MUSEUM OF NATURAL HISTORY"
+      },
+      {
+        "from": [
+          "HYGEIA HOTEL",
+          "THE HYGEIA HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HYGEIA HOTEL"
+      },
+      {
+        "from": [
+          "ALUMNI ASSOCIATION OF THE HOMEOPATHIC MEDICAL COLLEGE & HOSPITAL",
+          "ALUMNI ASSOCIATION OF THE NY HOMEOPATHIC MEDICAL COLLEGE & HOSPITAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALUMNI ASSOCIATION OF THE HOMEOPATHIC MEDICAL COLLEGE & HOSPITAL"
+      },
+      {
+        "from": [
+          "CHAMBER OF COMMERCE",
+          "THE CHAMBER OF COMMERCE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CHAMBER OF COMMERCE"
+      }
+    ],
+    "description": "Mass edit cells in column sponsor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "STOCKHOLM RESTAURANT",
+          "RESTAURANT RICHE STOCKHOLM",
+          "THE STOCKHOLM RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STOCKHOLM RESTAURANT"
+      },
+      {
+        "from": [
+          "RESTAURANT HOTEL REICHSHOF HAMBURG",
+          "STADTRESTAURANT HOTEL REICHSHOF HAMBURG"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTAURANT HOTEL REICHSHOF HAMBURG"
+      },
+      {
+        "from": [
+          "SPRINGFIELD CALEDONIANS",
+          "SPRINGFIELD CALEDONIAN CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SPRINGFIELD CALEDONIANS"
+      },
+      {
+        "from": [
+          "ST. GEORGE'S SOCIETY OF NEW YORK",
+          "ST. GEORGE'S SOCIETY OF THE CITY OF NEW YORK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ST. GEORGE'S SOCIETY OF NEW YORK"
+      },
+      {
+        "from": [
+          "OCCIDENTAL & ORIENTAL STEAMSHIP COMPANY",
+          "OCCIDENTAL & ORIENTAL STEAMSHIP CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCCIDENTAL & ORIENTAL STEAMSHIP COMPANY"
+      },
+      {
+        "from": [
+          "ANCIENT & HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS",
+          "ANCIENT AND HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANCIENT & HONORABLE ARTILLERY COMPANY OF MASSACHUSETTS"
+      },
+      {
+        "from": [
+          "THE WALDORF ASTORIA",
+          "THE WALDORF ASTORIA HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE WALDORF ASTORIA"
+      },
+      {
+        "from": [
+          "IMPERIAL HOTEL",
+          "IMPERIAL HOTEL LIMITED"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "IMPERIAL HOTEL"
+      },
+      {
+        "from": [
+          "THE AMEN CORNER",
+          "AMEN CORNER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE AMEN CORNER"
+      },
+      {
+        "from": [
+          "BROWN PALACE HOTEL",
+          "THE H.C. BROWN PALACE HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BROWN PALACE HOTEL"
+      },
+      {
+        "from": [
+          "STOCKHOLM RESTAURANT",
+          "THE STOCKHOLM RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STOCKHOLM RESTAURANT"
+      },
+      {
+        "from": [
+          "NORDDEUTSCHER LLOYD BREMEN - S.S.BARBAROSSA",
+          "NORDDEUTSCHER LLOYD BREMEN - BARBAROSSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NORDDEUTSCHER LLOYD BREMEN - S.S.BARBAROSSA"
+      },
+      {
+        "from": [
+          "THE GRAND HOTEL",
+          "THE GRAND HOTEL LTD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE GRAND HOTEL"
+      },
+      {
+        "from": [
+          "CLASS OF '77 OF HARVARD COLLEGE",
+          "CLASS OF 1877 HARVARD COLLEGE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CLASS OF 1877 OF HARVARD COLLEGE"
+      }
+    ],
+    "description": "Mass edit cells in column sponsor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BELLEVUE - STRATFORD",
+          "BELLEVUE STRATFORD HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BELLEVUE  STRATFORD HOTEL"
+      },
+      {
+        "from": [
+          "MEXICAN AMERICAN STEAMSHIP COMPANY",
+          "MEXICAN-AMERICAN S.S. CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MEXICAN AMERICAN STEAMSHIP COMPANY"
+      },
+      {
+        "from": [
+          "S.S. NIEUW AMSTERDAM",
+          "S.S NEW AMSTERDAM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "S.S. NEW AMSTERDAM"
+      },
+      {
+        "from": [
+          "BAILEY CATERING CO.",
+          "BAILEY CATERING COMPANH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BAILEY CATERING COMPANY"
+      },
+      {
+        "from": [
+          "ALBANY SOCIETY OF NEW YORK",
+          "ALBANY SOCIETY OF NYC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALBANY SOCIETY OF NEW YORK"
+      },
+      {
+        "from": [
+          "STATE DEPARTMENT SPECIAL TO THE PAN-AMERICAN CONGRESS AT THE CITY OF MEXICO",
+          "STATE DEPARTMENT SPECIAL TO THE PAND-AMERICAN CONGRESS AT THE CITY OF MEXICO (PULLMAN CAR SERVICE)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STATE DEPARTMENT SPECIAL TO THE PAN-AMERICAN CONGRESS AT THE CITY OF MEXICO"
+      },
+      {
+        "from": [
+          "WESTERN PAPER BOX MANUFACTURERS ASSOCIATION",
+          "WESTERN PAPER BOX MAKERS ASSOC'N."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "WESTERN PAPER BOX MANUFACTURERS ASSOCIATION"
+      }
+    ],
+    "description": "Mass edit cells in column sponsor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "RESTAURANT AND/OR LOCATION UNKNOWN",
+          "[RESTAURANT AND/OR LOCATION UNKNOWN]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTAURANT AND/OR LOCATION UNKNOWN"
+      }
+    ],
+    "description": "Mass edit cells in column sponsor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "sponsor",
+          "expression": "value",
+          "columnName": "sponsor",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "OCEANIC STEAMSHIP COMPANY",
+                "l": "OCEANIC STEAMSHIP COMPANY"
+              }
+            },
+            {
+              "v": {
+                "v": "OCEANIC STEAMSHIP CO.",
+                "l": "OCEANIC STEAMSHIP CO."
+              }
+            },
+            {
+              "v": {
+                "v": "OCEANIC STEAMSHIP COMPANY - SONOMA",
+                "l": "OCEANIC STEAMSHIP COMPANY - SONOMA"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OCEANIC STEAMSHIP COMPANY",
+          "OCEANIC STEAMSHIP CO."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OCEANIC STEAMSHIP COMPANY"
+      }
+    ],
+    "description": "Mass edit cells in column sponsor"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sponsor",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COMPAGNIE GÉNÉRALE TRANSATLANTIQUE",
+          "COMPAGNIE GENERALE TRANSATLANTIC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMPAGNIE GÉNÉRALE TRANSATLANTIQUE"
       }
     ],
     "description": "Mass edit cells in column sponsor"
@@ -5009,11 +6665,11 @@
       "mode": "row-based"
     },
     "columnName": "sponsor",
-    "expression": "value.replace(/[\\p{Zs}\\s]+/,' ')",
+    "expression": "value.trim()",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column sponsor using expression value.replace(/[\\p{Zs}\\s]+/,' ')"
+    "description": "Text transform on cells in column sponsor using expression value.trim()"
   },
   {
     "op": "core/text-transform",
@@ -5022,11 +6678,11 @@
       "mode": "row-based"
     },
     "columnName": "sponsor",
-    "expression": "value.replace(/\"/,\"\")",
+    "expression": "value.replace(/[\"']/,\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column sponsor using expression value.replace(/\"/,\"\")"
+    "description": "Text transform on cells in column sponsor using expression value.replace(/[\"']/,\"\")"
   },
   {
     "op": "core/text-transform",
@@ -5035,11 +6691,11 @@
       "mode": "row-based"
     },
     "columnName": "sponsor",
-    "expression": "value.replace(/'/,\"\")",
+    "expression": "value.replace(/\\\\/,\"\")",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10,
-    "description": "Text transform on cells in column sponsor using expression value.replace(/'/,\"\")"
+    "description": "Text transform on cells in column sponsor using expression value.replace(/\\\\/,\"\")"
   },
   {
     "op": "core/text-transform",
@@ -5053,19 +6709,6 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column sponsor using expression value.replace(/[\\[\\]]/,\"\")"
-  },
-  {
-    "op": "core/text-transform",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "sponsor",
-    "expression": "value.replace(\"\\\\\",\"\")",
-    "onError": "keep-original",
-    "repeat": false,
-    "repeatCount": 10,
-    "description": "Text transform on cells in column sponsor using expression value.replace(\"\\\\\",\"\")"
   },
   {
     "op": "core/text-transform",
@@ -5092,71 +6735,5 @@
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column sponsor using expression value.trim()"
-  },
-  {
-    "op": "core/mass-edit",
-    "engineConfig": {
-      "facets": [],
-      "mode": "row-based"
-    },
-    "columnName": "sponsor",
-    "expression": "value",
-    "edits": [
-      {
-        "from": [
-          "S.S. BREMEN",
-          "T.S. BREMEN"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "S.S. BREMEN"
-      },
-      {
-        "from": [
-          "ALFREDO",
-          "ALFREDOS"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "ALFREDO"
-      },
-      {
-        "from": [
-          "RESTAURANT NAME AND/OR LOCATION NOT GIVEN",
-          "RESTAURTANT NAME AND/OR LOCATION NOT GIVEN"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "RESTAURANT NAME AND/OR LOCATION NOT GIVEN"
-      },
-      {
-        "from": [
-          "DELMONICOS",
-          "DELMONICO"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "DELMONICOS"
-      },
-      {
-        "from": [
-          "WILLARDS HOTEL",
-          "WILLARD HOTEL"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "WILLARDS HOTEL"
-      },
-      {
-        "from": [
-          "ANTOINES",
-          "ANTOINE"
-        ],
-        "fromBlank": false,
-        "fromError": false,
-        "to": "ANTOINES"
-      }
-    ],
-    "description": "Mass edit cells in column sponsor"
   }
 ]
